@@ -5,9 +5,9 @@ This utility stores all events of customers in a data structure. Calculates Life
 Events are new customer, customer updates, site_visit, image_upload and order.
 
 Methods are 
-Ingest(e,D) : Stores event e in data structure D
+Ingest(e,D) : Stores event e in data structure D.
 
-TopxSimpleLTVCutomers(x,D) : Returns top x customers with highest LTV in D
+TopxSimpleLTVCutomers(x,D) : Returns top x customers with highest LTV in D.
 
 Data structure is python dictionary which has one entry for each customer and of the form below
 
@@ -23,7 +23,7 @@ D : {
 
 site_visit : maintains list of dictionary to store all site_vist events , 
 image      : maintains list of dictionary to store all image upload events ,
-order      : maintains dictionary of orders with key as order_id and value as dictionary of order details
+order      : maintains dictionary of orders with key as order_id and value as dictionary of order details.
 
 
 Calculating LTV:
@@ -33,15 +33,15 @@ which can be simplified to
 LTV = 10 * 52 * order_revenue / num_of_weeks
 where, 
 order_revenue => sum of all orders made by that customer 
-num_of_weeks  => number of weeks from first site visit to last one
+num_of_weeks  => number of weeks from first site visit to last one.
 
 Assumptions:
-Customer must exists in D for events like site_visit, image or order
-All orders are due to site_visit events
+Customer must exists in D for events like site_visit, image or order.
+All orders are due to site_visit events.
 
 Input:
-Text file of events, All events are seperated by ,
-each event is a dictionary
+Text file of events, All events are seperated by ',' .
+Each event is a dictionary.
 
 Output:
 Text file of top 10 customers with their respective SLV in descending order of SLV
@@ -55,7 +55,7 @@ Maintain Folder containing subfolders
       input : contains input.txt
       output : empty or with output.txt
       
-Go to src subfolder location in command line and just give ltv_calc on command line 
-ltv_calc will take input as input.txt from input subfolder and will store output in output.txt in output subfolder
+Go to src subfolder location in command line and just give ltv_calc on command line.
+ltv_calc will take input as input.txt from input subfolder and will store output in output.txt in output subfolder.
 
 
