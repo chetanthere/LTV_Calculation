@@ -51,9 +51,9 @@ Python 3
 
 Instructions to Run:
 Maintain Folder containing subfolders
-      src : contains ltv_calc.py
-      input : contains input.txt
-      output : empty or with output.txt
+      src : contains ltv_calc.py .
+      input : contains input.txt .
+      output : empty or with output.txt .
       
 Go to src subfolder location in command line and just give ltv_calc on command line.
 ltv_calc will take input as input.txt from input subfolder and will store output in output.txt in output subfolder.
