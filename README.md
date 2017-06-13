@@ -21,8 +21,8 @@ D : {
           .            
     }
 
-site_visit : maintains list of dictionary to store all site_vist events
-image      : maintains list of dictionary to store all image upload events
+site_visit : maintains list of dictionary to store all site_vist events , 
+image      : maintains list of dictionary to store all image upload events ,
 order      : maintains dictionary of orders with key as order_id and value as dictionary of order details
 
 
