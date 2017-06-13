@@ -7,7 +7,7 @@ Events are new customer, customer updates, site_visit, image_upload and order.
 Methods are 
 Ingest(e,D) : Stores event e in data structure D
 
-TopxSimpleLTVCutomers(x,D) : Retuens top x customers with highest LTV in D
+TopxSimpleLTVCutomers(x,D) : Returns top x customers with highest LTV in D
 
 Data structure is python dictionary which has one entry for each customer and of the form below
 
