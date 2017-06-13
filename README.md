@@ -4,6 +4,56 @@ This utility stores all events of customers in a data structure. Calculates Life
 
 Events are new customer, customer updates, site_visit, image_upload and order.
 
+Customer
+
+type *
+CUSTOMER
+verb *
+NEW
+UPDATE
+Additional Data
+key(customer_id) *
+event_time *
+last_name
+adr_city
+adr_state
+Site Visit
+
+type *
+SITE_VISIT
+verb *
+NEW
+Additional Data
+key(page_id) *
+event_time *
+customer_id *
+tags (array of name/value properties)
+Image Upload
+
+type *
+IMAGE
+verb *
+UPLOAD
+Additional Data
+key(image_id) *
+event_time *
+customer_id *
+camera_make
+camera_model
+Order
+
+type *
+ORDER
+verb *
+NEW
+UPDATE
+Additional Data
+key(order_id) *
+event_time *
+customer_id *
+total_amount *
+* represents required data
+
 Methods are 
 Ingest(e,D) : Stores event e in data structure D.
 
